@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.QuadCurveTo?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="GamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project1.play_scene_controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/backGround.png" />
+         </image></ImageView>
+      <Path fx:id="path1" fill="#2197ff00" opacity="0.58" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0">
+          <elements>
+              <MoveTo x="-30.0" />
+              <QuadCurveTo controlX="300.0" x="300.0" y="230.0" />
+          </elements>
+      </Path>
+      <Path fx:id="path1_end" fill="DODGERBLUE" opacity="0.3" stroke="BLACK" strokeType="INSIDE">
+         <elements>
+            <MoveTo x="300.0" y="230.0" />
+            <LineTo x="300.0" y="300.0" />
+         </elements>
+      </Path>
+      <Path fx:id="path2" fill="#2197ff00" opacity="0.58" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0">
+         <elements>
+            <MoveTo y="630.0" />
+            <QuadCurveTo controlY="300.0" x="230.0" y="300.0" />
+         </elements>
+      </Path>
+      <Path fx:id="path2_end" fill="DODGERBLUE" opacity="0.3" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+            <MoveTo x="229.0" y="300.0" />
+            <LineTo x="300.0" y="300.0" />
+          </elements>
+      </Path>
+      <Path fx:id="path3" fill="#0e73cc00" fillRule="EVEN_ODD" opacity="0.58" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0">
+         <elements>
+            <MoveTo x="630.0" y="600.0" />
+            <QuadCurveTo controlX="300.0" controlY="600.0" x="300.0" y="350.0" />
+         </elements>
+      </Path>
+      <Path fx:id="path3_end" fill="#0e73cc00" fillRule="EVEN_ODD" layoutX="10.0" layoutY="10.0" opacity="0.3" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0">
+         <elements>
+            <MoveTo x="300.0" y="370.0" />
+            <LineTo x="300.0" y="300.0" />
+         </elements>
+      </Path>
+      <Path fx:id="path4" fill="#2197ff00" opacity="0.58" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0">
+         <elements>
+            <MoveTo x="600.0" y="-30.0" />
+            <QuadCurveTo controlX="600.0" controlY="300.0" x="350.0" y="300.0" />
+         </elements>
+      </Path>
+      <Path fx:id="path4_end" fill="#2197ff00" layoutX="10.0" layoutY="10.0" opacity="0.3" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0">
+         <elements>
+            <MoveTo x="370.0" y="300.0" />
+            <LineTo x="300.0" y="300.0" />
+         </elements>
+      </Path>
+      <Circle fx:id="CenterCircle" layoutX="300.0" layoutY="300.0" opacity="0.86" radius="70.0" stroke="TRANSPARENT">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5287356321839081">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.01673809438943863" blue="0.1899999976158142" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" opacity="0.5992366671562195" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill></Circle>
+      <Circle layoutX="230.0" layoutY="300.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5689655172413793">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.01720000058412552" blue="0.17171333730220795" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18333333730697632" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="370.0" layoutY="300.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5689655172413793">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.01720000058412552" blue="0.17171333730220795" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18333333730697632" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="300.0" layoutY="230.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5689655172413793">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.01720000058412552" blue="0.17171333730220795" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18333333730697632" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="300.0" layoutY="370.0" radius="20.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5689655172413793">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8600000143051147" green="0.01720000058412552" blue="0.17171333730220795" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.18333333730697632" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Label fx:id="ScoreDisplay" alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="277.0" prefHeight="46.0" prefWidth="98.0" text="Score" textFill="#ff0026">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="ProgressBar" prefHeight="19.0" prefWidth="600.0" progress="0.0" />
+      <ImageView fx:id="SwitchToEndSceneImage" fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/Next.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="SwitchToEndSceneButton" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="204.0" mnemonicParsing="false" onAction="#SwitchToEndScene" opacity="0.0" prefHeight="162.0" prefWidth="200.0" text="前往結算畫面">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="SettingPane" layoutX="50.0" layoutY="50.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="400.0" layoutX="50.0" layoutY="50.0" opacity="0.99" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="400.0">
+               <effect>
+                  <Glow />
+               </effect>
+            </Rectangle>
+            <Text layoutX="189.0" layoutY="111.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" text="按這裡繼續">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="213.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="回首頁">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Label layoutX="122.0" layoutY="156.0" text="set music volume(音樂音量)" textAlignment="CENTER" textFill="#050505" underline="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Slider fx:id="VolumeSlider" blockIncrement="100.0" layoutX="180.0" layoutY="212.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+            <Text fx:id="VolumeDisplay" layoutX="333.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50" wrappingWidth="31.42852783203125">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="200.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/back_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="150.0" layoutX="174.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/leave.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="201.0" layoutY="254.0" mnemonicParsing="false" onAction="#SwitchToStartScene" opacity="0.0" prefHeight="81.0" prefWidth="100.0" text="Button" />
+            <Button layoutX="186.0" layoutY="90.0" mnemonicParsing="false" onAction="#FromStopToStart" opacity="0.0" prefHeight="26.0" prefWidth="126.0" text="Button" />
+            <Button layoutX="189.0" layoutY="391.0" mnemonicParsing="false" onAction="#LeaveGame" opacity="0.0" prefHeight="70.0" prefWidth="120.0" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
