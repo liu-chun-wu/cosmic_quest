@@ -1,4 +1,4 @@
-CS course final project
+COSMIC QUEST
 ===
 # 說明
 計算機概論的期末專題，我們使用了JavaFx製作了一款名為COSMIC QUEST的音樂遊戲，玩家要根據音樂的節奏按下特定按鍵來得分，有點像是太鼓達人，只是我們有四條軌道
